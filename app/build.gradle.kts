@@ -18,11 +18,14 @@ repositories {
 dependencies {
     // Use JUnit Jupiter for testing.
     testImplementation("org.junit.jupiter:junit-jupiter:5.9.3")
-
+    testImplementation("org.mockito:mockito-core:5.14.2")
     testRuntimeOnly("org.junit.platform:junit-platform-launcher")
 
     // This dependency is used by the application.
     implementation("com.google.guava:guava:32.1.1-jre")
+    implementation("com.auth0:java-jwt:4.4.0")
+    implementation("com.fasterxml.jackson.core:jackson-core:2.17.3")
+    implementation("com.fasterxml.jackson.core:jackson-databind:2.17.3")
 }
 
 // Apply a specific Java toolchain to ease working on different environments.
