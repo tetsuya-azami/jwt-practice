@@ -17,7 +17,7 @@ public class HMacJwtProducer {
         Algorithm alg = Algorithm.HMAC256(secretKey);
 
         return JWT.create()
-                .withIssuer("HmacJwtProducer")
+                .withIssuer("HMacJwtProducer")
                 .withSubject("ID12345")
                 .withExpiresAt(OffsetDateTime.now().plusHours(1).toInstant())
                 .withIssuedAt(OffsetDateTime.now().toInstant())
